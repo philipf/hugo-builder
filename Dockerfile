@@ -21,7 +21,7 @@ VOLUME /src
 
 RUN microdnf -y install curl ruby tar java-11-openjdk && microdnf clean all
 
-ARG HUGO_VERSION=0.73.0
+ARG HUGO_VERSION=0.74.3
 ARG ASCIIDOCTOR_VERSION=2.0.10
 ARG ASCIIDOCTOR_DIAGRAM_VERSION=2.0.2
 
