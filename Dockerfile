@@ -19,7 +19,7 @@ EXPOSE 1313
 WORKDIR /src
 VOLUME /src
 
-RUN microdnf -y install curl ruby tar java-11-openjdk && microdnf clean all
+RUN microdnf -y install curl ruby tar java-11-openjdk graphviz && microdnf clean all
 
 ARG HUGO_VERSION=0.74.3
 ARG ASCIIDOCTOR_VERSION=2.0.10
